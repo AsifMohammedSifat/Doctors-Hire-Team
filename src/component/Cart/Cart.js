@@ -2,7 +2,14 @@ import React from 'react';
 import AddDoctor from '../AddDoctor/AddDoctor';
 import './Cart.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser,faDollarSign } from '@fortawesome/free-solid-svg-icons'
+
+
 const Cart = (props) => {
+        const userIcon = <FontAwesomeIcon icon={faUser} />
+        const dollarIcon = <FontAwesomeIcon icon={faDollarSign} />
+
 
     const {cart}=props;
     let totalDoctors=[];
@@ -17,8 +24,13 @@ const Cart = (props) => {
     return (
         <div>
             <div className="cart-upper mb-5">
-                <p> Total Doctor Added:{props.cart.length}</p> 
-            <h6>Total Salary: <span style={{fontWeight:'bold'}}>{totalSalary}$</span></h6>
+                <p>
+                     {userIcon}  Total Doctor Added:  <span style={{color:'blue',fontWeight:'bold'}}>  
+                         {props.cart.length}
+                    </span>
+                </p>
+            <p>{dollarIcon} Total Salary: <span style={{color:'blue',fontWeight:'bold'}}>${totalSalary}</span></p>
+            <button className="btn btn-warning rounded-3 border-0 ">Buy Now</button>
             </div>
             {
                 totalDoctors.map(doctor=><AddDoctor

@@ -16,9 +16,6 @@ const Main = () => {
            .then(data => setDoctor(data));
    }, []);
 
-   //effect for event handler
-
-
 //    event handler function 
 const handleAddToCart=doctor=>{
     const newCart=[...cart,doctor];
@@ -26,15 +23,16 @@ const handleAddToCart=doctor=>{
 }
 
     return (
+        // main body divided with two div
         <div className="row contain">
-            {console.log(doctors)}
+            {/* main body left side--doctors card  */}
             <div className=" col col-9">
                 <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                      {
                     doctors.map(doctor=><Doctor
-                    doctor={doctor}
-                    key={doctor.id}
-                    handleAddToCart={handleAddToCart}
+                    doctor={doctor} //pass each object
+                    key={doctor.id} //pass key
+                    handleAddToCart={handleAddToCart} //pass event handler 
                     ></Doctor>)
                    }  
                 </div>
@@ -42,10 +40,12 @@ const handleAddToCart=doctor=>{
 
             </div>
 
+            {/* main body right side--cart  */}
             <div className="col col-3">
-                <Cart cart={cart}></Cart>
+                <Cart  cart={cart}></Cart>
             </div>       
             
+        
         </div>
     );
 };

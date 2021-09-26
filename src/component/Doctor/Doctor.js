@@ -18,10 +18,10 @@ const Doctor = (props) => {
                             <div className="card-body">
                              <p className="fs-5 fw-bold">Name:{name}</p>
                         
-                             <p className="card-text  fw-normal">
-                                   Type: {type} <br />
-                                    Age: {age} <br />
-                                    Country: {country} <br />
+                             <p className="card-text fs-5 fw-normal">
+                                    <span className="fw-bold"> Type:</span> {type} <br />
+                                    <span className="fw-bold"> Country:</span>{country} <br />
+                                    <span className="fw-bold"> Age:</span> {age} <br />
                             </p>
                             <p className="fw-bold">Salary: {salary}$</p>
 
