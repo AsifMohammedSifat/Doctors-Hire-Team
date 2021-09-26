@@ -1,7 +1,9 @@
 .card-style{
-    background-color: #fae7ef;
+    background-color: antiquewhite;
     height: 550px;
+    border: 1px solid yellow;
 }
+
 .btn-style{
     padding:3px;
     border-radius: 5px;

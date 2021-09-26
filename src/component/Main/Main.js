@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Doctor from '../Doctor/Doctor';
+import './Main.css'
 
 const Main = () => {
     const [doctors,setDoctor]=useState([]);
@@ -25,9 +26,9 @@ const handleAddToCart=doctor=>{
 }
 
     return (
-        <div className="container row ">
+        <div className="row contain">
             {console.log(doctors)}
-            <div className="col col-9">
+            <div className=" col col-9">
                 <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                      {
                     doctors.map(doctor=><Doctor
