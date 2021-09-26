@@ -1,0 +1,10 @@
+.card-style{
+    background-color: #fae7ef;
+    height: 550px;
+}
+.btn-style{
+    padding:3px;
+    border-radius: 5px;
+    width:100%;
+    border:0;
+}
