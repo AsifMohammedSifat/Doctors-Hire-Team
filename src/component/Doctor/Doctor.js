@@ -13,7 +13,7 @@ const Doctor = (props) => {
             <div className="col">
                     <div className="card card-style" >
                         {/* card img  */}
-                        <img src={img} className="card-img-top mt-2 w-25 w-md-75 mx-auto rounded-circle" alt="..."/>
+                        <img src={img} className="card-img-top mt-2 w-50 w-md-75 mx-auto rounded-circle" alt="..."/>
                         
                            {/* card body  */}
                             <div className="card-body">
@@ -34,7 +34,7 @@ const Doctor = (props) => {
                             <button 
                             
                             onClick={()=>props.handleAddToCart(props.doctor)}
-                            className="bg-warning text-dark fw-bold btn-style">{cartIcon}Add To Team</button>
+                            className="bg-warning text-dark   fw-bold btn-style">{cartIcon}Add To Team</button>
                         </div>
                 
                     </div>

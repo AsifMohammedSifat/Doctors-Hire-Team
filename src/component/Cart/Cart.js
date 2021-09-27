@@ -24,19 +24,19 @@ const Cart = (props) => {
     return (
         <div>
             {/* div of carts selected doctor  */}
-            <div className="cart-upper mb-5">
-                <p>
+            <div className="cart-upper mb-5 ">
+                <p className="cartText">
                     {/* cart upeer data--total doctor*/}
                      {userIcon}  Total Doctor Added:  <span style={{color:'blue',fontWeight:'bold'}}>  
                          {props.cart.length}
                     </span>
                 </p>
-            <p>
+            <p p className = "cartText" >
                 {/* cart upper data-total salary  */}
                 {dollarIcon} Total Salary: <span style={{color:'blue',fontWeight:'bold'}}>
                     ${totalSalary}</span>
             </p>
-            <button className="btn btn-warning fw-bold rounded-3 border-0">Pay Now</button>
+            <button className="btn btn-warning cartText fw-bold   rounded-3 border-0">Pay Now</button>
 
             </div>
             {
