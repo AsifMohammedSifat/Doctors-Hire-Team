@@ -11,7 +11,7 @@ const Cart = (props) => {
         const dollarIcon = <FontAwesomeIcon icon={faDollarSign} />
 
 
-    const {cart}=props;
+    const {cart}=props; //destructing of add to cart-button click data
     let totalDoctors=[];
     let totalSalary=0;
 
@@ -23,19 +23,26 @@ const Cart = (props) => {
 
     return (
         <div>
+            {/* div of carts selected doctor  */}
             <div className="cart-upper mb-5">
                 <p>
+                    {/* cart upeer data--total doctor*/}
                      {userIcon}  Total Doctor Added:  <span style={{color:'blue',fontWeight:'bold'}}>  
                          {props.cart.length}
                     </span>
                 </p>
-            <p>{dollarIcon} Total Salary: <span style={{color:'blue',fontWeight:'bold'}}>${totalSalary}</span></p>
-            <button className="btn btn-warning rounded-3 border-0 ">Buy Now</button>
+            <p>
+                {/* cart upper data-total salary  */}
+                {dollarIcon} Total Salary: <span style={{color:'blue',fontWeight:'bold'}}>
+                    ${totalSalary}</span>
+            </p>
+            <button className="btn btn-warning fw-bold rounded-3 border-0">Pay Now</button>
+
             </div>
             {
                 totalDoctors.map(doctor=><AddDoctor
-                key={doctor.id}
-                doctor={doctor}
+                key={doctor.id}//passing object id
+                doctor={doctor}//passing add to cart data 
                 >
 
                 </AddDoctor>)

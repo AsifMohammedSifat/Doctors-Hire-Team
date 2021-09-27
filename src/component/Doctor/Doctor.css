@@ -1,9 +1,14 @@
+/* card style  */
 .card-style{
     background-color: antiquewhite;
     height: 550px;
     border: 1px solid yellow;
 }
-
+.card-style:hover{
+    transform: scale(1.03);
+    transition: all 1s;
+}
+/* add to cart button style  */
 .btn-style{
     padding:3px;
     border-radius: 5px;
