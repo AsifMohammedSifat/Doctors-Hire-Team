@@ -21,7 +21,7 @@ const Header = () => {
 
                             <li className="nav-item">
                             <h4>Make a Doctors Team</h4>
-                            <p>The World is affected and we are  ready for fighiting with Covid-19</p>
+                            <h6 >The World is affected and we are  ready for fighiting with Covid-19</h6>
                             <h4 className="text-warning">Total Budget:$100 Billion </h4>
                             </li> 
                            </ul>
