@@ -1,12 +1,11 @@
 /* card style  */
 .card-style{
     background-color: antiquewhite;
-    height: 550px;
+    height: 450px;
     border: 1px solid yellow;
 }
 .card-style:hover{
     transform: scale(1.03);
-    transition: all 1s;
 }
 /* add to cart button style  */
 .btn-style{
@@ -17,6 +16,11 @@
 }
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
+    .card-text span,p{
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+    }
    .card-style {
        height: 400px;
    }

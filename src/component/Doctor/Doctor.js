@@ -17,12 +17,15 @@ const Doctor = (props) => {
                         
                            {/* card body  */}
                             <div className="card-body">
-                             <p className="fs-6 fs-md-5 fw-bold">Name:{name}</p>
+                             <p className="fs-6 fs-md-5  fw-bold">Name:{name}</p>
                         
-                             <p className="card-text fs-6 fs-md-5 fw-normal">
-                                    <span className="fw-bold"> Type:</span> {type} <br />
-                                    <span className="fw-bold"> Country:</span>{country} <br />
-                                    <span className="fw-bold"> Age:</span> {age} <br />
+                             <p className = "card-text fs-6 fs-md-5 fw-normal" >
+                                    <span className="fw-bold"> Type:</span> 
+                                    <span>{type}</span> <br />
+                                    <span className="fw-bold"> Country:</span>
+                                    <span>{country}</span> <br />
+                                    <span className="fw-bold"> Age:</span>
+                                    <span>{age}</span>  <br />
                             </p>
                             <p className="fw-bold">Salary: {salary}$</p>
 

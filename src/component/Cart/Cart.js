@@ -24,7 +24,7 @@ const Cart = (props) => {
     return (
         <div>
             {/* div of carts selected doctor  */}
-            <div className="cart-upper mb-5 ">
+            <div className="cart-upper mb-5">
                 <p className="cartText">
                     {/* cart upeer data--total doctor*/}
                      {userIcon}  Total Doctor Added:  <span style={{color:'blue',fontWeight:'bold'}}>  
