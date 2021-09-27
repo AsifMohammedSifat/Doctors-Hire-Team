@@ -17,7 +17,7 @@ const Doctor = (props) => {
                         
                            {/* card body  */}
                             <div className="card-body">
-                             <p className="fs-6 fs-md-5  fw-bold">Name:{name}</p>
+                             <p className="fs-7 fs-md-5  fw-bold">Name: {name}</p>
                         
                              <p className = "card-text fs-6 fs-md-5 fw-normal" >
                                     <span className="fw-bold"> Type:</span> 
