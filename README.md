@@ -23,7 +23,6 @@ ___
 |Name               |Email                           |
 |-------------------|--------------------------------|
 |Asif Mohammed Sifat|asifmohammedsifat38@gmail.com   |
-|-------------------|--------------------------------|
 |Live Site Link     |https://doctor-asif.netlify.app/|
 
 
