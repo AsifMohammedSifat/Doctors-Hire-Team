@@ -26,7 +26,7 @@ const handleAddToCart=doctor=>{
         // main body divided with two div
         <div className="row contain">
             {/* main body left side--doctors card  */}
-            <div className=" col col-6 col-md-9">
+            <div className=" col col-7 col-md-9">
                 <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                      {
                     doctors.map(doctor=><Doctor
@@ -41,7 +41,7 @@ const handleAddToCart=doctor=>{
             </div>
 
             {/* main body right side--cart  */}
-            <div className="col col-6 col-md-3">
+            <div className="col col-5 col-md-3">
                 <Cart  cart={cart}></Cart>
             </div>       
             

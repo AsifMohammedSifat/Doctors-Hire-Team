@@ -13,11 +13,11 @@ const Doctor = (props) => {
             <div className="col">
                     <div className="card card-style" >
                         {/* card img  */}
-                        <img src={img} className="card-img-top mt-2 w-75 mx-auto rounded-circle" alt="..."/>
+                        <img src={img} className="card-img-top mt-2 w-25 w-md-75 mx-auto rounded-circle" alt="..."/>
                         
                            {/* card body  */}
                             <div className="card-body">
-                             <p className="fs-5 fw-bold">Name:{name}</p>
+                             <p className="fs-6 fs-md-5 fw-bold">Name:{name}</p>
                         
                              <p className="card-text fs-6 fs-md-5 fw-normal">
                                     <span className="fw-bold"> Type:</span> {type} <br />
