@@ -3,8 +3,6 @@
 Here provided project link [Apollo Hospital Doctors Team](https://doctor-asif.netlify.app/).
 ___
 ## Project Tools
----
-***
 >This is Health Care Website.
 ---
 >You can hire best doctors from here.
